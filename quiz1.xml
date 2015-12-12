@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tp22.MainActivity" >
+
+
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prénom"
+
+        android:layout_marginTop="17dp"
+        android:text="@string/nom"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/prénom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nom"
+        android:layout_marginTop="31dp"
+        android:text="@string/prénom"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/prénom"
+        android:layout_marginTop="31dp"
+        android:text="@string/sexe"
+
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/sexe"
+        android:layout_marginTop="31dp"
+        android:text="@string/age"
+        android:layout_weight="1"/>
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editnom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nom"
+        android:layout_alignBottom="@+id/nom"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:layout_weight="1">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editprénom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prénom"
+        android:layout_alignBottom="@+id/prénom"
+        android:layout_alignLeft="@+id/editnom"
+        android:ems="10"
+        android:layout_weight="1"
+
+        />
+    <EditText
+        android:id="@+id/editsexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sexe"
+        android:layout_alignBottom="@+id/sexe"
+        android:layout_alignLeft="@+id/editprénom"
+        android:ems="10"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignLeft="@+id/editsexe"
+        android:ems="10"
+
+        android:layout_weight="1"
+
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editage"
+
+
+        android:text="suivant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+    <Button
+        android:id="@+id/aff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editage"
+
+
+        android:text="Affichertous"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginTop="70dp"
+        />
+
+
+
+</RelativeLayout>
